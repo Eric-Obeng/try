@@ -11,28 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-aside {
-  background: yellow;
-  width: calc(30% - 10px);
-  margin-left: 10px;
-
-}
-
-.main-component {
-  height: 5rem;
-  width: 98vw;
-  background: teal;
-  align-items: center;
-  
-}
-
-main, h1 {
-  text-align: center;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.header {
-  margin-top: 20px;
-}
