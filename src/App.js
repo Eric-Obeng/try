@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Fruits from "./Fruits";
+import FruitsCounter from "./FruitsCounter";
 
 function App() {
+
+  const [fruits] = React.useState([
+    { fruitName: 'apple', id: 1},
+    { fruitName: 'pear', id: 2},
+    { fruitName: 'plum', id: 3}
+  ]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Try <code>src/App.js</code> and save to display.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Where should the start go?</h1>
+      <Fruits fruits={fruits} />
+      <FruitsCounter fruits={fruits} />
     </div>
   );
 }
